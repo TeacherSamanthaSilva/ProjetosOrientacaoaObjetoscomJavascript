@@ -1,3 +1,15 @@
+// helpers
+function compareObjects(obj1,obj2){
+// instanceof - objeto, Classe
+if(obj1 instanceof obj2){
+    console.log("o objeto" + obj1.nome + "é uma instância de obj2");
+}else{
+    console.log("o objeto" + obj1.nome + " não é uma instância de obj2");
+}
+}
+
+
+// objects
 function Ninja(nome,qtd){
     this.nome = nome;
     this.estoqueShuriken = qtd;
@@ -29,3 +41,5 @@ console.log(naruto);
 console.log(orochimaru);
 
 naruto.atirarShuriken(orochimaru);
+
+compareObjects(naruto, Ninja);
