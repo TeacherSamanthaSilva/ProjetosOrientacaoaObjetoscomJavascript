@@ -1,0 +1,1 @@
+console.log(new Date(Date.now()));// mostra a data neste exato momento
